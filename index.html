@@ -1,4 +1,4 @@
-8<!DOCTYPE html>
+y8<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -166,7 +166,36 @@
     transform: translateY(0px);
   }
 </style>
-<script>
+<style>
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    padding: 12px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  nav a {
+    color: #e6cc80;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    padding-top: 60px; /* to prevent content from hiding behind fixed nav */
+  }
+</style><script>
   document.addEventListener("DOMContentLoaded", () => {
     const reveals = document.querySelectorAll(".reveal");
     const animate = () => {
