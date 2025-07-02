@@ -87,7 +87,33 @@
   </style>
 </head>
 <body>
-  
+<style>
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+    const animate = () => {
+      for (let el of reveals) {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add("active");
+        }
+      }
+    };
+    window.addEventListener("scroll", animate);
+    animate(); // trigger on load
+  });
+</script>  
 <header>
   <h1>WELCOME TO THE ANCHOR OF THE NEW WORLD</h1>
   <p>Where Truth, Discovery and Destiny Align – We've Only Just Begun</p>
