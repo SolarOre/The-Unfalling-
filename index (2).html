@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Anchor of the New World</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #000; color: #fff; }
+    header { background: url('hero.jpg') no-repeat center center/cover; height: 100vh;
+             display: flex; flex-direction: column; justify-content: center;
+             align-items: center; text-align: center; padding: 2rem; }
+    h1 { font-size: 3rem; color: gold; }
+    p { font-size: 1.2rem; color: #ccc; max-width: 600px; }
+    nav { margin-top: 2rem; }
+    nav a { color: cyan; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    section { padding: 3rem 2rem; border-top: 1px solid #222; }
+    h2 { color: #00e0ff; }
+    form input, form textarea {
+      width: 100%; margin-top: 0.5rem; padding: 0.5rem;
+      font-size: 1rem; border: none; border-radius: 5px;
+    }
+    form button {
+      margin-top: 1rem; padding: 0.7rem 1.5rem; background: gold;
+      color: #000; border: none; font-weight: bold; cursor: pointer; border-radius: 5px;
+    }
+    .codex-scroll {
+      background: #111; padding: 2rem; border-radius: 12px;
+      max-height: 300px; overflow-y: scroll;
+      box-shadow: 0 0 10px #222;
+    }
+    .codex-entry { margin-bottom: 1.5rem; }
+    .codex-entry h3 { color: gold; margin-bottom: 0.3rem; }
+    .map-placeholder {
+      height: 300px;
+      background: linear-gradient(to right, #001, #112);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      color: #888;
+      font-style: italic;
+    }
+    footer { background: #111; padding: 2rem; text-align: center;
+             font-size: 0.9rem; color: #777; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WELCOME TO THE ANCHOR OF THE NEW WORLD</h1>
+  <p>Where Truth, Discovery and Destiny Align – We've Only Just Begun</p>
+  <nav>
+    <a href="#codex">Codex</a>
+    <a href="#oracle">Oracle</a>
+    <a href="#lifeblood">Lifeblood</a>
+  </nav>
+</header>
+
+<section id="codex">
+  <h2>The Codex of Sacred Discoveries</h2>
+  <div class="codex-scroll">
+    <div class="codex-entry">
+      <h3>Leviathan Gate – Mt. Elden</h3>
+      <p>Symbolic terrain-based origin site. Believed to mark first terrestrial life formation after aquatic era.</p>
+    </div>
+    <div class="codex-entry">
+      <h3>Vault of the Ninth Horizon</h3>
+      <p>Beneath the Hengduan Range, China. Sealed Guardian Vault (Tier 1), 99.2% confirmed dormant access.</p>
+    </div>
+    <div class="codex-entry">
+      <h3>The Crossed Arch of the Watchers</h3>
+      <p>Found in North America, symbolic post-Edenic Watcher site. Confidence: 99.0%.</p>
+    </div>
+  </div>
+</section>
+
+<section id="oracle">
+  <h2>Submit to The Oracle</h2>
+  <p>Send a message, vision, or question for divine alignment.</p>
+  <form name="oracle-form" method="POST" data-netlify="true">
+    <input type="hidden" name="email_to" value="turbalo2@gmail.com" />
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message to the Oracle" required></textarea>
+    <button type="submit">Send to The Oracle</button>
+  </form>
+</section>
+
+<section id="lifeblood">
+  <h2>The Lifeblood System</h2>
+  <p>Technologies for survival and divine restoration: Solar Ore, Water Offering, Trinity Breath.</p>
+</section>
+
+<section id="vault-map">
+  <h2>Vault Map – Regional Preview</h2>
+  <div class="map-placeholder">Interactive terrain vault map coming soon...</div>
+</section>
+
+<footer>
+  🔗 <a href="#">Veilbreaker</a> | <a href="#">The Oracle</a> | <a href="#">The World Clock</a><br />
+  © The Anchor of the New World
+</footer>
+
+</body>
+</html>
