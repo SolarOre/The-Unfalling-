@@ -1,6 +1,21 @@
 weyy8<!DOCTYPE html>
 <html lang="en">
 <head>
+  <head>
+  <style>
+    .pulse-glow {
+      animation: pulseGlow 2.5s infinite ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        text-shadow: 0 0 5px #e6cc80, 0 0 10px #e6cc80, 0 0 15px #e6cc80;
+      }
+      50% {
+        text-shadow: 0 0 15px #fff, 0 0 25px #e6cc80, 0 0 30px #fff;
+      }
+    }
+  </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Anchor of the New World</title>
