@@ -7,27 +7,27 @@
   <link rel="manifest" href="manifest.json" />
   <style>
     body { font-family: sans-serif; margin: 0; background: #000; color: #fff; }
+    <!-- 🌟 Animated Navigation Bar -->
+<nav style="
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  z-index: 9999;
+  padding: 12px 0;
+  text-align: center;
+  border-bottom: 1px solid #222;
+  font-family: sans-serif;">
 
-    <style>
-  html {
-    scroll-behavior: smooth;
-  }
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#oracle" class="nav-link">The Oracle</a>
+  <a href="#lifeblood" class="nav-link">Lifeblood</a>
+  <a href="#scroll" class="nav-link">Sacred Scroll</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</nav>
 
-  .nav-link {
-    margin: 0 16px;
-    color: #00e5ff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    position: relative;
-  }
-
-  .nav-link:hover {
-    color: gold;
-    text-shadow: 0 0 8px gold, 0 0 12px #ffaa00;
-  }
-</style>
+<!-- Offset spacer -->
+<div style="height: 65px;"></div>
     header { background: url('hero.jpg') no-repeat center center/cover; height: 100vh;
              display: flex; flex-direction: column; justify-content: center;
              align-items: center; text-align: center; padding: 2rem; }
